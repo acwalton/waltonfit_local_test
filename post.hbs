@@ -1,0 +1,12 @@
+{{!< default}}
+
+<progress class="reading-progress" value="0" max="100" aria-label="Reading progress"></progress>
+
+{{#post}}
+
+<main class="gh-main">
+    {{> "components/article" showPrimaryTag=true showComments=true showReadingTime=true}}
+    {{> "components/cta" title=@custom.email_signup_text}}
+</main>
+
+{{/post}}
